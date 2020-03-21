@@ -7,6 +7,8 @@ body {
     box-sizing: border-box;
 }
 
+/* set relative position */
+
 .container {
     margin: 150px auto;
     width: 1060px;
@@ -14,44 +16,21 @@ body {
     position: relative;
 }
 
+/* header */
+
 header {
     position: absolute;
-    top: -85px;
+    top: -100px;
     left: 250px;
     z-index: 10;
     width: 100vw;
+    box-shadow: 0 0 50px rgb(0,0,0, 0.3);
 }
 
 .input-block {
     background-color: black;
     padding: 45px 0 50px 65px;
-}
-
-hr {
-    height: 3px;
-    border: none;
-    background-color: white;
-    opacity: 0.2;
-}
-
-.control-bar {
-    width: 810px;
-    background-color: #f6bb2c;
-    margin-left: 50px;
-    padding: 20px 30px;
-    width: 100vw;
-}
-
-img {
-    height: 40px;
-}
-
-input {
-    font-family: 'Playfair Display', serif;
-    background-color: transparent;
-    border: 0px;
-    font-size: 48px;
-    color: white;
+    height: 185px;
 }
 
 header h3 {
@@ -62,12 +41,49 @@ header h3 {
     letter-spacing: 0.3em;
 }
 
+input {
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    border: 0px;
+    font-size: 48px;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.control-bar {
+    height: 75px;
+    background-color: #f6bb2c;
+    margin-left: 50px;
+    padding: 20px 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.control-bar .img {
+    padding: 0px 18px;
+    opacity: 0.5;
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+/* main */
+
 main {
     width: 1060px;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 0 0 50px rgb(0,0,0, 0.4);
 }
 
 .content {
@@ -90,7 +106,7 @@ h1 {
     font-size: 78px;
     font-weight: bold;
     color: black;
-    padding: 40px 0 20px;
+    padding: 40px 0 15px;
 }
 
 .content h3 {
@@ -108,7 +124,6 @@ article p{
     line-height: 1.5;
     text-align: justify;
 }
-
 
 .em {
     font-style: italic;
