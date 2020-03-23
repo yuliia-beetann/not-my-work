@@ -25,6 +25,7 @@ header {
     z-index: 10;
     width: 100vw;
     box-shadow: 0 0 50px rgb(0,0,0, 0.3);
+    position: relative;
 }
 
 .input-block {
@@ -59,11 +60,13 @@ hr {
 .control-bar {
     height: 75px;
     background-color: #f6bb2c;
-    margin-left: 50px;
     padding: 20px 30px;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
+    position: absolute;
+    left: 65px;
+    box-shadow: 0 0 50px rgb(0,0,0, 0.3);
 }
 
 .control-bar .img {
